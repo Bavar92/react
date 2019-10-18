@@ -1,5 +1,5 @@
 {
-  "name": "my-apps",
+  "name": "react",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -27,5 +27,20 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bavar92/react.git"
+  },
+  "keywords": [
+    "zupomo49"
+  ],
+  "author": "Bavar92",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bavar92/react/issues"
+  },
+  "homepage": "https://github.com/Bavar92/react#readme"
 }
