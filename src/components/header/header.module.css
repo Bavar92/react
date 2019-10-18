@@ -1,0 +1,6 @@
+.block {
+    display: block;
+}
+.block.test {
+    display: block;
+}
