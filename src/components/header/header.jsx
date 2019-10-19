@@ -1,27 +1,14 @@
 import React from 'react';
-import logo from '.././logo.svg';
 import h from './header.module.css';
 function Header() {
     return (
-        <div className={`${h.block} ${h.test}`}>
-            <div className="App">
-                <header className="App-header">
-                    <img src={logo} className="App-logo" alt="logo"/>
-                    <p>
-                        Edits <code>src/App.js</code> and save to reload.
-                    </p>
-
-                    <a
-                        className="App-link"
-                        href="https://reactjs.org"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        Learn React
-                    </a>
-                </header>
+        <header>
+            <div className={`${h.block} ${h.test}`}>
+                <div className="App-header">
+                    <img src='https://static.runukraine.org/wp-content/uploads/sites/2/2017/09/Logo_Lviv_Gorod-01.png' className="App-logo" alt="logo"/>
+                </div>
             </div>
-        </div>
+        </header>
     );
 }
 
