@@ -1,15 +1,15 @@
 import React from 'react';
 import p from './profile.module.css';
+import Post from "./post";
 
 const Profile = () => {
     return (
-        <div className="profile">
+        <div className={p.profile}>
             avatar
             <div className="items">
-                <div className={p.item}>Text</div>
-                <div className={p.item}>Text</div>
-                <div className={p.item}>Text</div>
-                <div className={p.item}>Text</div>
+                <Post message='hi'/>
+                <Post message='good'/>
+
             </div>
         </div>
     )
