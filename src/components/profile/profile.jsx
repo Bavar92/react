@@ -1,16 +1,11 @@
 import React from 'react';
 import p from './profile.module.css';
-import Post from "./post";
+import Posts from "./posts/posts";
 
-const Profile = () => {
+const Profile = (props) => {
     return (
         <div className={p.profile}>
-            avatar
-            <div className="items">
-                <Post message='hi'/>
-                <Post message='good'/>
-
-            </div>
+            <Posts postItem={props.postItem}/>
         </div>
     )
 };

@@ -8,9 +8,9 @@ const Sidebar = () => {
             <ul>
                 <li className={s.item}><NavLink to="/profile" activeClassName={s.active}>Profile</NavLink></li>
                 <li className={s.item}><NavLink to="/dialogs" activeClassName={s.active}>Dialog</NavLink></li>
-                <li className={s.item}><a href="#">Profile</a></li>
-                <li className={s.item}><a href="#">Profile</a></li>
-                <li className={s.item}><a href="#">Profile</a></li>
+                <li className={s.item}><a href="/sdasd">Profile</a></li>
+                <li className={s.item}><a href="/sdasd">Profile</a></li>
+                <li className={s.item}><a href="/sdasd">Profile</a></li>
             </ul>
         </div>
     )
