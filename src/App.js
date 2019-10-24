@@ -5,29 +5,31 @@ import Profile from './components/profile/profile.jsx';
 import Sidebar from './components/sidebar/sidebar.jsx';
 import Footer from "./components/footer/footer";
 import Dialogs from "./components/dialogs/dialogs";
-import {BrowserRouter, Route} from "react-router-dom";
+import {Route} from "react-router-dom";
 
 
 
 function App(props) {
 
     return (
-        <BrowserRouter>
+
             <div id="main">
                 <Header/>
                 <div className="parent-box">
                     <Sidebar/>
                     <div className="content">
                         <Route path='/profile'
-                               render={() => <Profile postItem={props.postItem}/>}/>
+                               render={() => <Profile
+                                   profilePage={props.state.profilePage}
+                                   addPost={props.addPost}/>}/>
                         <Route path='/dialogs'
-                               render={() => <Dialogs dialogs={props.dialogs}
-                                                      messages={props.messages}/>}/> {/* or let sameFunction = () => <Dialogs/> */}
+                               render={() => <Dialogs
+                                   state={props.state.dialogsPage}/>}/> {/* or let sameFunction = () => <Dialogs/> */}
                     </div>
                 </div>
                 <Footer/>
             </div>
-        </BrowserRouter>
+
     )
 }
 

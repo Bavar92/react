@@ -6,7 +6,21 @@
     text-transform: capitalize;
     font-weight: 500;
 }
-img {
+figure {
     width: 70px;
-    margin-right: 20px;
+    margin: 0 10px 0 0;
+}
+figure img {
+    max-width: 100%;
+}
+p {
+    margin: 0 10px;
+}
+.like {
+    color: gold;
+    font-size: 10px;
+}
+.like img {
+    width: 20px;
+    margin-right: 5px;
 }
